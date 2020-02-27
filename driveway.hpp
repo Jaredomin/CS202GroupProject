@@ -12,7 +12,10 @@ class driveway
 public:
     driveway()
     {
-        createdrive();
+		int x = 0;
+		std::cout << "Enter number: ";
+		std::cin >> x;
+        createdrive(x);
         printdriveway();
     }
     void moveblower()
@@ -22,32 +25,39 @@ public:
 private:
     void printdriveway()
     {
+		/*
+		int dim = sqrt(snow.size());
         std::cout << "Printing driveway mach 1: \n";
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < dim; i++)
         {
-            std::cout << snow[i*5] << "  ";
-            std::cout << snow[i*5+1] << "  ";
-            std::cout << snow[i*5+2] << "  ";
-            std::cout << snow[i*5+3] << "  ";
-            std::cout << snow[i*5+4] << "  ";
-            std::cout << std::endl;
+			for (int j = 0; j < dim; j++)
+			{
+				std::cout << snow[i * dim + j] << "  ";
+			}
+			std::cout << std::endl;
         }
+		*/
     }
-    void createdrive()
+    void createdrive(int x)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
-        std::uniform_int_distribution<> dis(1, 8);
-        for (int i = 0; i < 24; i++)
+        std::uniform_int_distribution<> dis(1, 10);
+        for (int i = 0; i < (x * x - 1); i++)
         {
             snow.push_back(dis(gen));
         }
-        for (int i = 0; i < 24; i++)
+        for (int i = 0; i < snow.size(); i++)
         {
-            if (snow[i] < 8)
+            if (snow[i] < 10)
             {
                 snow[i] = 1;
             }
+			else
+			{
+				snow[i] = 0;
+
+			}
         }
         snow.push_back(9);
     }

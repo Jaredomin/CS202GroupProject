@@ -2,5 +2,49 @@
 
 int main()
 {
-	driveway driveway();
+	driveway snow;
 }
+
+
+
+
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
+//BOX 2D
